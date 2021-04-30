@@ -1,0 +1,114 @@
+@import 'var';
+
+@mixin flex($flex-col: true) {
+    @if $flex-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @else {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+.container {
+
+    width: 100%;
+    height: 75vh;
+    padding: 5rem;
+    @include flex($flex-col: true);
+
+
+
+    .card {
+
+        @include flex($flex-col: false);
+        // background-color: #fff;
+        width: 80%;
+        margin: auto;
+
+        height: 50%;
+
+        &__img {
+
+            order: 2;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 1rem;
+            flex: 1;
+
+
+            width: 100%;
+            height: 100%;
+
+
+            &>img {
+                object-fit: cover;
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &__info {
+
+            border-top-left-radius: 1rem;
+            border-bottom-right-radius: 0;
+            height: 100%;
+            text-align: start;
+            padding-left: 4rem;
+            width: 100%;
+            flex: 1;
+            align-items: flex-start;
+
+            .main-heading {
+                width: 70%;
+
+                .heading-color {
+                    color: $pr-accent;
+                }
+            }
+
+            .paragraph {
+                color: $ne-stat-heading;
+                width: 70%;
+
+
+            }
+
+            .titel {
+                align-self: start;
+                @include flex($flex-col: false);
+                justify-content: space-around;
+                width: 70%;
+
+                .info {
+                    margin-top: 1.5rem;
+                    // padding-right: 8rem;
+
+
+                    .p {
+                        text-transform: uppercase;
+                        color: $ne-stat-heading;
+                        font-size: .8125rem;
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+
+
+}

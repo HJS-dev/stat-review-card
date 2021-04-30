@@ -1,0 +1,119 @@
+.container {
+  width: 100%;
+  height: 75vh;
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: auto;
+  height: 50%;
+}
+
+.container .card__img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.container .card__img > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.container .card__info {
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 0;
+  height: 100%;
+  text-align: start;
+  padding-left: 4rem;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .card__info .main-heading {
+  width: 70%;
+}
+
+.container .card__info .main-heading .heading-color {
+  color: #7f30b0;
+}
+
+.container .card__info .paragraph {
+  color: rgba(255, 255, 255, 0.6);
+  width: 70%;
+}
+
+.container .card__info .titel {
+  -ms-flex-item-align: start;
+      align-self: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+}
+
+.container .card__info .titel .info {
+  margin-top: 1.5rem;
+}
+
+.container .card__info .titel .info .p {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: .8125rem;
+  margin-top: 0.5rem;
+}
+/*# sourceMappingURL=desktop.css.map */
