@@ -1,0 +1,73 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #090b1a;
+  color: aliceblue;
+  min-width: 375px;
+  max-width: 1440px;
+  font-size: 15px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  padding: 3rem 1rem;
+}
+
+.container .card {
+  width: 100%;
+}
+
+.container .card__img {
+  position: relative;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+}
+
+.container .card__img::before {
+  content: '';
+  background-color: #aa5cdb;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.container .card__img > img {
+  width: 100%;
+  display: block;
+}
+
+.container .card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1b1938;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.container .card__infoinfo {
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
