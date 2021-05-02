@@ -76,7 +76,7 @@ body {
 
     }
 
-    :nth-child(2) {
+    :last-child {
         animation: link 3s linear infinite alternate;
         // transition: ease-in-out 1s black ;
         color: cyan;

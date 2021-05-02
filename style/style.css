@@ -50,7 +50,7 @@ body {
   text-decoration: none;
 }
 
-.attribution :nth-child(2) {
+.attribution :last-child {
   -webkit-animation: link 3s linear infinite alternate;
           animation: link 3s linear infinite alternate;
   color: cyan;
