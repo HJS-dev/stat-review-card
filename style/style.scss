@@ -38,18 +38,18 @@ body {
 
 @keyframes link {
     0% {
-        color: 
-        #80f5db;
+        color:
+            #80f5db;
     }
 
     10% {
-        color: 
-        #26b6a7;
+        color:
+            #26b6a7;
     }
 
     25% {
-        color: 
-        #1da19d;
+        color:
+            #1da19d;
     }
 
     // 35% {
@@ -76,10 +76,14 @@ body {
 
     }
 
-    :last-child {
+    :nth-child(3) {
+        // animation: link 3s linear infinite alternate;
+       color: rgb(245, 112, 50)
+    }
+
+    :nth-child(4) {
         animation: link 3s linear infinite alternate;
-        // transition: ease-in-out 1s black ;
-        color: cyan;
+      
     }
 }
 
@@ -152,11 +156,11 @@ body {
                     margin-top: 0.5rem;
                 }
 
-                a{
+                a {
                     text-decoration: none;
                     padding: 1rem 2rem;
                     // background-color: ;
-                    color:greenyellow;
+                    color: greenyellow;
                 }
             }
 

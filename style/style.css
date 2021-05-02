@@ -50,10 +50,13 @@ body {
   text-decoration: none;
 }
 
-.attribution :last-child {
+.attribution :nth-child(3) {
+  color: #f57032;
+}
+
+.attribution :nth-child(4) {
   -webkit-animation: link 3s linear infinite alternate;
           animation: link 3s linear infinite alternate;
-  color: cyan;
 }
 
 .container {
