@@ -130,4 +130,10 @@ body {
   font-size: .8125rem;
   margin-top: 0.5rem;
 }
+
+.container .card__info .info a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  color: greenyellow;
+}
 /*# sourceMappingURL=style.css.map */
